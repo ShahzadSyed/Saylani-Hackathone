@@ -106,3 +106,57 @@ body {
   /* Adjust margin if needed */
 }
 
+/* Adjust input field border and padding for better visibility */
+.input-group .form-control {
+  border: 2px solid #0072ff;
+  border-radius: 30px 0 0 30px;
+  padding: 10px 15px;
+}
+
+/* Adjust input group's end text (search by image) */
+.input-group-text {
+  border: 2px solid #0072ff;
+  border-left: none;
+  border-radius: 0 30px 30px 0;
+  background-color: #0072ff;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+/* Hover effect for input group */
+.input-group-text:hover {
+  background-color: #005bb5;
+  border-color: #005bb5;
+}
+
+/* Filter Button Styling */
+.btn-outline-primary {
+  border-radius: 30px;
+  padding: 8px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0072ff;
+  color: white;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .input-group .form-control {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .input-group-text {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .btn-outline-primary {
+    padding: 5px 15px;
+    font-size: 0.9rem;
+  }
+}
