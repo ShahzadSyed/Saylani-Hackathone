@@ -81,6 +81,12 @@ body {
 .nav-item .dropdown-menu .bold-item {
   font-weight: bold;
 }
+/* Ensure normal weight for the items after the divider */
+.dropdown-item {
+  /* font-weight: normal; */
+  font-size: 0.9rem;
+  /* Adjust the font size as needed */
+}
 /* Navbar links ko hover pe underline dena */
 .navbar-nav .nav-link:hover {
   text-decoration: underline;
@@ -90,6 +96,13 @@ body {
   text-decoration-thickness: 2px;
   /* Set the thickness of the underline */
 }
-.dumb{
-  background-color: blue;
+/* Enable dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  /* Show dropdown menu */
+  position: absolute;
+  /* Keep it properly positioned */
+  margin-top: 0;
+  /* Adjust margin if needed */
 }
+
